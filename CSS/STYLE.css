@@ -7,7 +7,7 @@
   padding: 9px 16px;
   border-radius: 5px;
   text-decoration: none;
-  z-index: 99999!important;
+  z-index: 99999 !important;
 }
 
 .floating-button1 {
@@ -19,7 +19,7 @@
   padding: 9px 16px;
   border-radius: 5px;
   text-decoration: none;
-  z-index: 99999!important;
+  z-index: 99999 !important;
 }
 
 .dropbtn {
@@ -44,16 +44,19 @@
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 .pagination {
   display: inline-block;
   position: absolute;
   bottom: 20px;
   left: 430px;
-
 }
 
 .pagination a {
@@ -90,7 +93,7 @@
 }
 
 .prof-text {
-  padding-top: 300px ;
+  padding-top: 300px;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.2;
@@ -116,19 +119,31 @@
 }
 
 .pagination {
-margin: 0;
-padding: 0;
-background-color: rgba(0, 0, 0, 0.3);
-position: fixed;
-bottom: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 50px;
 }
 
-.fade-right { 
-    left: -200px; 
-    position:absolute; 
-    }
+#profile-image {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
 
-.fade-right1 { 
-    left: 250px; 
-    position:absolute; 
-    }
+/* media */
+@media only screen and (max-width: 768px) {
+  .title-text {
+    font-size: 3rem !important;
+  }
+
+  .subject-text {
+    font-size: 1.5rem !important;
+  }
+}
+
+body,
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
