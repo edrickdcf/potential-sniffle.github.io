@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chapter 4 - Navigation Bar</title>
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 	<link rel="stylesheet" type="text/css" href="../CSS/STYLE.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<a href="../HOME.html" class="floating-button1">Home</a>
+	<nav class="navbar navbar-inverse navbar-fixed-top"> <!-- navbar-default-->
+		<div class="container">
+			<div class="navbar-header"> <!-- for logo's-->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsable">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">TUA Learning</a>
+			</div>
+			<div class="collapse navbar-collapse" id="collapsable">
+				<ul class="nav navbar-nav"> <!-- body of nav bar-->
+					<li><a href="#">Google</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Facebook <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Message</a></li>
+							<li><a href="#">Stories</a></li>
+						</ul>
+					</li>
+					<li class="active"><a href="https://www.twitter.com/">Twitter</a></li>
+					<li><a href="https://www.youtube.com/">Youtube</a></li>
+					
+					<button class="btn btn-info navbar-btn">Search....</button>
+				</ul>
+				<ul class="nav navbar-nav navbar-right"> <!-- right side of navbar-->
+					<li><a href="#"><span class="glyphicon glyphicon-floppy-saved"> </span> Sign up</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-user"> </span> Log in</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav><br><br><br>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+			</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+			<h1>What Does Navigation Bar Mean?</h1>
+			<p1>A navigation bar is a link to appropriate sections/pages in a website that helps readers in traversing the online document.
+			Considered a traditional method of navigation, a navigation bar can be implemented in a number of ways, namely, horizontally or vertically, or fixed or dynamic.
+			A navigation bar implementation is considered one of the key points of Web design and usability.</p1>
+			<br><br><br>
+			<button class="btn btn-success">Show</button>
+			<br><br>
+			<h1>Techopedia Explains Navigation Bar</h1>
+			<p2>A navigation bar helps readers in selecting topics, links or sub-topics of their interest.
+			Using a navigation bar, users need not enter the URL of the specific webpage, as this is automatically taken care of by the navigation bar, with the navigation sections having embedded the necessary links of the webpage.
+			A navigation bar also helps users, as it is easily locatable.
+			For Web developers, creating a navigation bar helps in separating content from structure.
+			This helps them in modifying style or providing creativity to the structure without impacting the information present in the pages.
+			As such, a navigation bar is considered a make-or-break design for the whole webpage.
+
+			A navigation bar uses standard HTML as the base for any online document.
+			It consists of a number of links that are called upon based on user action.
+
+			A navigation bar can be primarily classified into either fixed/sticky or dynamic.
+			Faster browsing and easier navigation are hallmarks of sticky navigation bars.
+			Dynamic navigation bars are used when space is a constraint and when translation issues, especially in mobile formats, are encountered.
+			There are other classifications of navigation bars, for example, based on the position (vertical or horizontal) and based on the text and graphics (text-only or graphics-only navigation bar).</p2>
+			<br><br><br>
+			<button class="btn btn-success">Show</button>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="pagination">
+	<a href="Activity 5.html">&laquo;</a>
+  <a href="Activity 1.html">1</a>
+  <a href="Activity 2.html">2</a>
+  <a href="Activity 3.html">3</a>
+  <a href="Activity 4.html">4</a>
+  <a href="Activity 5.html">5</a>
+  <a href="Activity 6.html" class="active">6</a>
+  <a href="Activity 7.html">7</a>
+  <a href="Activity 8.html">8</a>
+  <a href="Activity 7.html">&raquo;</a>
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+      $("button").click(function(){
+        $("p1").slideToggle();
+        $("p2").slideToggle();
+      });
+    });
+  </script>
+
+</html>

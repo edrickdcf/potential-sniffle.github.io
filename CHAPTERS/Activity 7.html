@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Activity 7 - Sample 2</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="../CSS/STYLE.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+
+   .btn {
+      color: lime;
+   }
+   .addColor {
+      color: green;
+   }
+
+   .addSize {
+      font-size: 90px;
+   }
+
+   .addTypo {
+      font-style: italic;
+   }
+
+   .addStyle {
+      font-family: Courier;
+   }
+
+   body {background-color: lightgoldenrodyellow;
+  }
+
+</style>
+<body>
+<a href="../HOME.html" class="floating-button">Home</a>
+   
+   <div class="container-fluid">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6" align="center">
+         <p id="section" class="addColor addSize addTypo">Interface Design Mobile and Web</p>
+         <button>Click me!</button>
+      </div>
+   </div>
+
+
+
+   <div class="pagination">
+   <a href="Activity 6.html">&laquo;</a>
+  <a href="Activity 1.html">1</a>
+  <a href="Activity 2.html">2</a>
+  <a href="Activity 3.html">3</a>
+  <a href="Activity 4.html">4</a>
+  <a href="Activity 5.html">5</a>
+  <a href="Activity 6.html">6</a>
+  <a href="Activity 7.html" class="active">7</a>
+  <a href="Activity 8.html">8</a>
+  <a href="Activity 8.html">&raquo;</a>
+</div>
+
+
+</body>
+<script>
+   $(document).ready(function() {
+      //
+      $("button").click(function() {
+         $("button").addClass("btn");
+
+         $("#section").removeClass("addColor");
+
+         $("#section").toggleClass("addColor").toggleClass("addStyle");
+      })
+   });
+</script>
+</html>

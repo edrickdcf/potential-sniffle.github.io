@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/STYLE.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Sample Calcu</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	
+<a href="../HOME.html" class="floating-button">Home</a>
+<div class="container mt-5">
+<center>
+  <label for="firstnum">First Number</label>
+  <input type="number" placeholder="first number" id="firstnum">
+  <label for="secondnum">Second Number</label>
+  <input type="number" placeholder="second number" id="secondnum">
+  <button> Calculate </button>
+</center>
+  
+
+</div>
+
+
+
+  <div class="pagination">
+  <a href="Activity 4.html">&laquo;</a>
+  <a href="Activity 1.html">1</a>
+  <a href="Activity 2.html">2</a>
+  <a href="Activity 3.html">3</a>
+  <a href="Activity 4.html">4</a>
+  <a href="Activity 5.html" class="active">5</a>
+  <a href="Activity 6.html">6</a>
+  <a href="Activity 7.html">7</a>
+  <a href="Activity 8.html">8</a>
+  <a href="Activity 6.html">&raquo;</a>
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $("button").click(function(){
+        var getfirstnum = $("#firstnum").val();
+        var getsecondnum = $("#secondnum").val();
+        var add = Number(getfirstnum) + Number(getsecondnum);
+        var minus = Number(getfirstnum) - Number(getsecondnum);
+        var pro = Number(getfirstnum) * Number(getsecondnum);
+        var devide = Number(getfirstnum) / Number(getsecondnum);
+
+        alert("Add = " + add + "\nMinus = " + minus + "\nDivision = " + devide + "\nProduct = " + pro);
+    });
+});
+</script>
+</html>

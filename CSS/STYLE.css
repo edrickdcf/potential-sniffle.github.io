@@ -1,0 +1,134 @@
+.floating-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #808080;
+  color: #fff;
+  padding: 9px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 99999!important;
+}
+
+.floating-button1 {
+  position: fixed;
+  top: 70px;
+  left: 20px;
+  background-color: #808080;
+  color: #fff;
+  padding: 9px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 99999!important;
+}
+
+.dropbtn {
+  color: white;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.pagination {
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  left: 430px;
+
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.title-text {
+  font-size: 100px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: black;
+  font-family: unset;
+}
+
+.subject-text {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: black;
+}
+
+.prof-text {
+  padding-top: 300px ;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: black;
+}
+
+.profile-text {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.img {
+  border-radius: 8px;
+}
+
+.aboutme-text {
+  padding-top: 25px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.2;
+  font-family: serif;
+}
+
+.pagination {
+margin: 0;
+padding: 0;
+background-color: rgba(0, 0, 0, 0.3);
+position: fixed;
+bottom: 50px;
+}
+
+.fade-right { 
+    left: -200px; 
+    position:absolute; 
+    }
+
+.fade-right1 { 
+    left: 250px; 
+    position:absolute; 
+    }

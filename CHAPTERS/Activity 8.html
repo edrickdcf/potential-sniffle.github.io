@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Activity 8</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="../CSS/STYLE.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+  .addColor {
+    color: black;
+  }
+
+  .addSize {
+    font-size: 50px;
+  }
+
+  .addTypo {
+    font-style: bold;
+    font-style: italic;
+  }
+
+  .addStyle {
+    font-family: Courier;
+  }
+
+  .sectionDiv {
+    background-color: lightyellow;
+    width: 250px;
+    height: 250px;
+  }
+
+  body {background-color: lightgreen;
+  }
+
+</style>
+<body>
+
+<a href="../HOME.html" class="floating-button">Home</a>
+
+  <div class="col-sm-5"></div>
+  <div class="container-fluid" align="center">
+    <div class="col-sm-6 sectionDiv">
+        <p id="section" class="addColor">Simple Change</p>
+        Set Width: <input type="number" id="setWidth"><br>
+        Set Height: <input type="number" id="setHeight"><br>
+
+        <button id="btnSetWidthHeight">Click me!</button>
+        <button id="btnGetWidthHeight">Get all</button>
+    </div>
+  </div>
+
+
+
+  <div class="pagination">
+  <a href="Activity 7.html">&laquo;</a>
+  <a href="Activity 1.html">1</a>
+  <a href="Activity 2.html">2</a>
+  <a href="Activity 3.html">3</a>
+  <a href="Activity 4.html">4</a>
+  <a href="Activity 5.html">5</a>
+  <a href="Activity 6.html">6</a>
+  <a href="Activity 7.html">7</a>
+  <a href="Activity 8.html" class="active">8</a>
+  <a href="Activity 8.html">&raquo;</a>
+</div>
+
+
+</body>
+<script>
+$(document).ready(function() {
+
+  $("#btnSetWidthHeight").click(function() {
+
+    var setWidth = $("#setWidth").val();
+    var setHeight = $("#setHeight").val();
+
+    console.log(setWidth + " X " + setHeight);
+
+    $(".sectionDiv").width(setWidth);
+    $(".sectionDiv").height(setHeight);
+
+  });
+
+  $("#btnGetWidthHeight").click(function() {
+    alert($(".sectionDiv").width() + " X " + $(".sectionDiv").height());
+  });
+});
+</script>
+</html>
